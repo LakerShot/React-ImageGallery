@@ -1,0 +1,73 @@
+.card {
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin: 20px;
+  cursor: pointer;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--white-color);
+  color: var(--dark-color);
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.card:hover, .card:focus {
+  color: rgb(37, 37, 37);
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+.card:hover::before, .card:focus::before {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.card:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.card:active::before {
+  opacity: 1;
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+  box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+}
+
+.card-info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+}
+.card-h3 {
+ flex: 2;
+ align-self: start;
+}
+
+.card-p {
+  text-transform: capitalize;
+  text-align: right;
+  flex: 6;
+  justify-self: end;
+}
+
+
+
+
