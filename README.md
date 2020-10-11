@@ -11,4 +11,4 @@ The way it look's like) 👇🏼
  
 ### That's all :D
 
-Copyright (c) 2020 Mark
+Copyright (c) 2020 LakerShot
