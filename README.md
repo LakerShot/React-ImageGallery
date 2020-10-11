@@ -1,5 +1,5 @@
 # React-ImageGallery Application
-This app doesn't use any UI libs only pure css with React.js
+This app doesn't use any UI libs only pure css with React. Backend: [jsonplaceholder](https://jsonplaceholder.typicode.com/ "jsonplaceholder")
 
 The way it look's like) 👇🏼
 
